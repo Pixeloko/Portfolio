@@ -191,13 +191,13 @@ i {
 }
 
 #progress-python {
-  --target-width:30%;
+  --target-width: 20%;
 }
 #progress-sql {
-  --target-width: 50%;
+  --target-width: 30%;
 }
 #progress-html {
-  --target-width: 30%;
+  --target-width: 40%;
 }
 #progress-wordpress {
   --target-width: 70%;
