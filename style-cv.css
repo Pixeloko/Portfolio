@@ -45,6 +45,12 @@ header {
   }
 }
 
+/*Images : certifications*/
+img {
+  width: 120px;
+  
+}
+
 /*Titles*/
 
 h1 {
@@ -70,6 +76,12 @@ h4 {
 
 .col {
   width: 450px;
+}
+#certif {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
 }
 
 .container {
