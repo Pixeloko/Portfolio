@@ -33,8 +33,9 @@ h2 {
 .container {
   background: #07070795; /* 2 numbers at the end to adjust opacity*/
   padding: 50px;
+  height: 300px;
+  width: 600px;
   color: rgb(190, 218, 204);
-  height: 650px;
 }
 
 article {
@@ -43,6 +44,7 @@ article {
 
 nav{
   height: 40px;
+  width: 700px;
   background: #000000;
   display: flex;
   align-items: center;
@@ -128,6 +130,23 @@ img {
 button:hover {
   cursor: pointer;
   box-shadow: 0 0 10px rgb(59, 78, 65); 
+}
+
+@media (max-width: 600px) {
+  nav {
+    width: 500px;
+  }
+  .container {
+    width: 400px;
+    height: 200px;
+    h1 {
+      font-size: 2em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+  
 }
 
 @keyframes fadeIn {
