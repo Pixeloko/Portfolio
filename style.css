@@ -5,28 +5,31 @@ html {
 }
 
 .body::before {
-  content: ""; 
-  position: absolute; 
+  content: "";
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 80%;
-  background-image: url("debian.jpg"); 
+  height: 70%;
+  background-image: url("medias/debian.jpg");
   background-size: cover;
   background-position: center;
-  opacity: 0.2; 
-  z-index: -1; 
+  opacity: 0.2;
+  z-index: -1;
 }
 
-h1,
-h2 {
+.body {
+  padding-bottom: 50px;
+}
+
+#title-portfolio {
   font-size: 2rem;
-  overflow: hidden; 
-  white-space: nowrap; 
-  border-right: 3px solid rgb(190, 218, 204); 
-  width: 0; 
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid rgb(190, 218, 204);
+  width: 0;
   animation: typing 3s steps(30, end), blink 0.6s step-end infinite;
-  animation-fill-mode: forwards; 
+  animation-fill-mode: forwards;
   font-size: 60px;
 }
 
@@ -36,6 +39,7 @@ h2 {
   width: 800px;
   height: 400px;
   color: rgb(190, 218, 204);
+  border-radius: 10px;
 }
 
 .commandes {
@@ -58,7 +62,7 @@ article {
   color: rgb(190, 218, 204);
 }
 
-#button{
+#button {
   height: 40px;
   width: 900px;
   padding-top: 4px;
@@ -68,7 +72,7 @@ article {
   border-top-left-radius: 30px;
 }
 
-.btn{
+.btn {
   width: 16px;
   height: 16px;
   background: #fff;
@@ -78,13 +82,13 @@ article {
   margin-left: 20px;
 }
 
-.btn:nth-child(1){
+.btn:nth-child(1) {
   background: #e63402;
 }
-.btn:nth-child(2){
+.btn:nth-child(2) {
   background: #e69e02;
 }
-.btn:nth-child(3){
+.btn:nth-child(3) {
   background: #02e656;
 }
 
@@ -98,7 +102,7 @@ article {
 .dot {
   height: 15px;
   width: 15px;
-  background: #ED594A;
+  background: #ed594a;
   display: inline-block;
   border-radius: 50%;
   margin-right: 7px;
@@ -117,7 +121,7 @@ p {
   transition: all 0.3s ease;
   font-family: myFont;
   font-size: 20px;
-  color: #27b73f;
+  color:#ed594a;
 }
 
 footer {
@@ -125,18 +129,70 @@ footer {
 }
 
 img {
-  width: 300px;
+  width: 200px;
   padding: 30px;
-  opacity: 0; 
-  transform: translateY(10px); 
-  animation: fadeIn 0.6s ease forwards; 
-  box-shadow: 10px 10px 10px black; 
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.6s ease forwards;
+  box-shadow: 10px 10px 10px black;
   border-radius: 20%;
 }
 
 button:hover {
   cursor: pointer;
-  box-shadow: 0 0 10px rgb(59, 78, 65); 
+  box-shadow: 0 0 10px rgb(59, 78, 65);
+}
+
+li {
+  list-style: none;
+  a {
+    color: #fff;
+  }
+  a:hover {
+    color: #02e656;
+  }
+}
+
+/* Partie géopolitique */
+#geopolitic {
+  padding-top: 200px;
+  padding-bottom: 50px;
+  background-color: #09090980;
+  color:rgb(190, 218, 204);
+  border-radius: 10px;
+  padding-left: 10px;
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1em;
+  }
+  button {
+    height: 50px;
+  }
+}
+
+#map {
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  border: white solid 0.7px;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 100px;
+  p {
+    width: 500px;
+  }
+  a {
+    color:#02e656;
+  }
+  a:hover {
+    color:#fff
+  }
 }
 
 @media (max-width: 600px) {
@@ -153,7 +209,6 @@ button:hover {
       font-size: 1em;
     }
   }
-  
 }
 
 @keyframes fadeIn {
@@ -169,7 +224,7 @@ button:hover {
   }
   to {
     width: 15ch;
-  } 
+  }
 }
 
 @keyframes blink {

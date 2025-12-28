@@ -15,13 +15,18 @@
             <nav class="commandes">
                 <ul>
                     <button class="glow-btn" id="myBadges">cd ~/badges</button>
-                    <a href="cv.html" style="text-decoration: none;"><button class="glow-btn">cd
-                            ~/cv</button></a>
+                    <a href="cv/cv.html" style="text-decoration: none;">
+                        <button class="glow-btn">cd ~/cv</button>
+                    </a>
                     <a href="https://raphixg.github.io/Sehep/characters.html" target="_blank"
-                        style="text-decoration: none;"><button class="glow-btn">cd
-                            ~/ArtistWebsite</button></a>
-                    <a href="#contact"><button class="glow-btn">cd ~/contact</button></a>
+                        style="text-decoration: none;">
+                        <button class="glow-btn">cd ~/ArtistWebsite</button>
+                    </a>
+                    <a href="#contact">
+                        <button class="glow-btn">cd ~/contact</button>
+                    </a>
                 </ul>
+                <div id="zone"></div>
             </nav>
         </header>
         <nav id="button">
@@ -34,11 +39,41 @@
         <div class="container">
             <div class="dots">
             </div>
-            <h1>My Portfolio</h1>
+            <h1 id="title-portfolio">My Portfolio</h1>
             <p>Please, choose what you want to see</p>
             <pre id="ascii"></pre>
+            <nav>
+                <ul>
+                    <li><a href='#geopolitic'>Profil [sciences sociales]</a></li>
+                    <li><a href='#'>Profil [informatique]</a></li>
+                </ul>
+            </nav>
 
         </div>
+    </section>
+
+    <section id="geopolitic">
+        <h1>Analyste geopolitique</h1>
+        <article>
+            <p>Diplomee d'un <u> <a target="_blank"
+                        href="https://www.fss.ulaval.ca/etudes/repertoire?cycles%5B%5D=902&unites%5B%5D=3&motCle=science+politique&gad_source=1&gad_campaignid=23017627438&gbraid=0AAAAADpXzrDEBJh5RRkQNmEZ6ybEXHUFR&gclid=Cj0KCQiAx8PKBhD1ARIsAKsmGbfwttFs3K8gft7ZC5SGkzVEOfI9DPZLkYZ_QLgz88yrfPOfvuo1NbAaApfQEALw_wcB">master
+                        en science politique</a></u>, avec un parcours academique focalise sur les <u><a target="_blank"
+                        href="https://espol.school/formation/licence-de-relations-internationales/">relations
+                        internationales</a> </u> et forte d'une experience en <u><a
+                        href="https://chaireunesco-prev.ca/projets-chaire/" target="_blank">analyse des tendances
+                        geopolitiques et numeriques.</a></u></p>
+            <button class="glow-btn"><a href="https://journal-de-100h.odoo.com/en_CA" target="_blank">Decouvrir mes
+                    articles</a></button>
+        </article>
+        <p>[Conseil : cliquer sur <strong style="color:#ed594a">cd ~/cv</strong> dans le menu de navigation pour
+            plus
+            d'informations]</p>
+
+        <div id="map">
+                <iframe src="https://www.google.com/maps/d/embed?mid=14U-cTWXX_rl3zJfsywb5LNjVRboKKMQ&ehbc=2E312F&noprof=1"
+                width="440" height="380"></iframe>
+        </div>
+
     </section>
 
 
@@ -53,7 +88,7 @@
 
 
     <script src="badges.js"></script>
-    <script src="ascii.js"></script>
+    <script src="medias/ascii.js"></script>
 </body>
 
 </html>
