@@ -26,7 +26,6 @@ ul {
     a, li {
         color: rgb(232, 233, 213);
         list-style: none;
-        text-decoration: none;
     }
     a:hover {
        color: #00c3e3; 
@@ -52,7 +51,7 @@ article {
 
 #presentation {
     filter: drop-shadow(5px 5px 4px );
-    width: 500px;
+    width: 700px;
     background-color: #98989870;
     padding: 10px;
     border-radius: 30px;
@@ -76,6 +75,7 @@ p {
 
 h2 {
     margin-left: 30px;
+    text-align: center;
 }
 
 /* Styles pour le carrousel */
@@ -104,6 +104,7 @@ h2 {
     box-shadow: 1px 1px 1px ;
     border: 1px solid #e0e0e0;
     margin: 0 auto; 
+    font-size: 0.9em;
 }
 
 .article-card-content {
@@ -116,12 +117,11 @@ h2 {
     color: white;
     padding: 5px 12px;
     border-radius: 15px;
-    font-size: 0.9em;
     margin-bottom: 10px;
 }
 
 .article-title, .article-title2 {
-    font-size: 2em;
+    font-size: 1.4em;
     font-family: 'Times New Roman', Times, serif;
     margin: 10px 0;
     color: #333;
@@ -134,14 +134,12 @@ h2 {
 
 .article-description {
     color: #666;
-    font-size: 0.95em;
     line-height: 1.5;
     font-style: italic;
 }
 
 .article-length {
     color: #999;
-    font-size: 0.85em;
     margin-top: 15px;
     display: flex;
     align-items: center;
@@ -160,8 +158,8 @@ h2 {
     background: #e60012;
     color: white;
     border: none;
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     font-size: 1.2em;
     cursor: pointer;
