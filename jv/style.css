@@ -1,0 +1,38 @@
+/* PALETTE COULEURS - NINTENO SWITCH EDITION
+#00c3e3	BLEU
+#ff4554	SAUMON
+#989898	GRIS CLAIR
+#414548	GRIS FONCÉ
+#e60012 ROUGE
+*/
+
+html {
+    background-color: rgb(232, 233, 213);
+    font-family: NintendoFont;
+}
+
+header, footer {
+    background-color: #e60012;
+    color: rgb(232, 233, 213);
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    a, li {
+        color: rgb(232, 233, 213);
+        list-style: none;
+        text-decoration: none;
+    }
+    a:hover {
+       color: #00c3e3; 
+    }
+}
+
+@font-face {
+    font-family: NintendoFont;
+    src: url(Pretendo.ttf);
+}
