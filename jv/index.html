@@ -19,62 +19,88 @@
         </nav>
     </header>
 
-    <body>
         <section>
         <div id="presentation">
             <h3>Description du projet</h3>
             <p>
                 Forte d'une expérience professionnelle en écriture journalistique (JeuxVideo.com, La Voix du Nord, Le Canari), je me plaîs à écrire sur le sujet des jeux vidéo.
-                Mes thèmes favoris dans le domaine sont : <span style="color:#e60012; "> #Nintendo #Indie #Metroidvania #JRPG #Aventure #VisualNovel</span>
+                Mes thèmes favoris dans le domaine sont : <span style="color:#e60012; text-shadow:#414548 1px 1px 1px"> #Nintendo #Indie #Metroidvania #JRPG #Aventure #VisualNovel</span>
             </p>
         </div>
         </section>
         <h2>Articles courts - Exemples de sujets "chauds"</h2>
-        <article>
-            <div><i><strong>Sujet : GTA VI <br>Nb de signes ≈ 2600 <br> <a
-                    href="https://www.jeuxvideo.com/news/1971213/gta-6-rockstar-discute-avec-des-pros-de-fortnite-et-roblox-pour-creer-l-ultime-experience-sandbox.htm">Source</a></i></strong>
+        <div class="carousel-container">
+            <div class="carousel-track" id="carouselTrack">
+                <!-- Articles -->
             </div>
-            <p>GTA 6 : Rockstar discute avec des pros de Fortnite et Roblox pour créer l'ultime expérience sandbox !
+            <div class="carousel-controls">
+                <button class="carousel-btn prev-btn">‹</button>
+                <button class="carousel-btn next-btn">›</button>
+            </div>
+        </div>
+        <script>
+// Charger les articles depuis articles.js (déjà chargé)
+// et initialiser le carrousel
 
-                Du contenu par les joueurs et pour les joueurs, ça fait penser aux expériences de Fortnite et ça
-                pourrait bien débarquer sur GTA 6. Rockstar est d’ailleurs en discussion avec de nombreux créateurs du
-                genre.
-
-                Rockstar inspiré par Fortnite et Roblox
-
-                Avec Grand Theft Auto VI, la nouvelle bombe de Rockstar Games annoncée pour cet automne, les fans
-                pourraient être surpris des nouveautés concernant la création de contenu sur le mode online. Selon les
-                propos de trois insiders rapportés par Digiday, le studio est actuellement en discussion avec de
-                nombreux créateurs qui ont travaillé sur Fortnite, Roblox, d’autres sur le mode en ligne de GTA V. Ce
-                qui fait de l’œil à Rockstar, c'est le côté sandbox des deux premiers titres cités. On voit en effet
-                qu’au fil des années, Fortnite s'est étendu : des modes de jeu naissent presque toutes les semaines
-                grâce à la communauté. On oublierait même que le jeu est avant tout un battle royale. Il ne fait aucun
-                doute que le modèle que proposera GTA 6 sera différent de ce que l’on connaît sur Fortnite, Roblox ou
-                encore Minecraft.
-
-                GTA 6 pourrait donc aller plus loin que ce que fait GTA 5 avec ses options RP et son système
-                d’hébergement de serveurs tels que FiveM. Selon les dires de Chris Hopper, un expert de chez Loaded, une
-                entreprise de conseil marketing : “les fondations de GTA RP se sont toujours basées sur l’interaction
-                entre joueurs”.
-
-                L’importance du jeu de rôle pour GTA V
-                Le mode créatif de Fortnite qui veut concurrencer ROBLOX
-
-                Une belle opportunité pour les plus petits studios
-
-                L’article de Digimedia explique que l’appel aux créateurs qu’entreprend Rockstar permettrait au studio
-                de modifier l’environnement et, du côté des joueurs, d'apporter leur propre propriété intellectuelle et
-                potentiellement leur marque. Cette intervention leur accorderait alors un rôle de sponsor du jeu.
-
-                Des créations qui permettront de rendre plus attrayant le mode en ligne du futur GTA en offrant toujours
-                plus de manières d’y jouer. Ce genre de collaboration pourrait bénéficier aussi bien à Rockstar, qui
-                verrait le nombre de joueurs augmenter, qu'aux participants du programme qui gagneraient en renommée
-                dans le domaine et en rentabilité. Par exemple, FiveM, que l’on a évoqué plus haut, propose ses services
-                d’hébergement en échange d’une contribution sous forme d’abonnement, ce qui permet de rémunérer l’équipe
-                de créateurs qui travaille dessus. D’autres se sont fait connaître grâce à ce type de collaboration.
-                C’est le cas de JOGO, un studio de développement qui est à l’origine des modes Bed Wars et Super Red Vs
-                Blue de Fortnite.</p>
-        </article>
+document.addEventListener('DOMContentLoaded', function() {
+    const carouselTrack = document.getElementById('carouselTrack');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    
+    let currentPosition = 0;
+    const cardWidth = 320; // Largeur d'une carte + gap
+    
+    // Fonction pour créer les cartes d'articles
+    function createArticleCards() {
+        carouselTrack.innerHTML = '';
+        
+        articles.forEach(article => {
+            const card = document.createElement('div');
+            card.className = 'article-card';
+            
+            card.innerHTML = `
+                <div class="article-card-content">
+                    <span class="article-subject">${article.subject}</span>
+                    <h3 class="article-title">${article.title}</h3>
+                    <p class="article-description">${article.description}</p>
+                    <p class="article-subtitle1">${article.subtitle1}</p>
+                    <p class="article-text1">${article.text1}</p>
+                    <p class="article-subtitle2">${article.subtitle2}</p>
+                    <p class="article-text2">${article.text2}</p>
+                    <div class="article-length">
+                        <p>${article.length} mots</p>
+                    </div>
+                </div>
+            `;
+            
+            carouselTrack.appendChild(card);
+        });
+    }
+    
+    // Navigation
+    function moveCarousel(direction) {
+        const trackWidth = carouselTrack.scrollWidth;
+        const containerWidth = carouselTrack.parentElement.offsetWidth;
+        const maxPosition = trackWidth - containerWidth;
+        
+        if (direction === 'next') {
+            currentPosition = Math.min(currentPosition + cardWidth, maxPosition);
+        } else {
+            currentPosition = Math.max(currentPosition - cardWidth, 0);
+        }
+        
+        carouselTrack.style.transform = `translateX(-${currentPosition}px)`;
+    }
+    
+    // Événements
+    prevBtn.addEventListener('click', () => moveCarousel('prev'));
+    nextBtn.addEventListener('click', () => moveCarousel('next'));
+    
+    // Initialisation
+    createArticleCards();
+});
+</script>
+<script src="articles.js"></script>
     </body>
 
 
@@ -87,6 +113,6 @@
         </nav>
     </footer>
 
-</body>
+
 
 </html>
