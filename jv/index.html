@@ -13,52 +13,56 @@
         <h1>Portfolio Redactrice Web JV</h1>
         <nav>
             <ul>
-                <li><a href="./index.html">Portfolio global</a></li>
+                <li><a href="../index.html">Portfolio global</a></li>
                 <li><a href="mailto:lola-louna@outlook.fr">Me contacter</a></li>
             </ul>
         </nav>
     </header>
 
-        <section>
+    <section>
         <div id="presentation">
             <h3>Description du projet</h3>
             <p>
-                Forte d'une expérience professionnelle en écriture journalistique (JeuxVideo.com, La Voix du Nord, Le Canari), je me plaîs à écrire sur le sujet des jeux vidéo.
-                Mes thèmes favoris dans le domaine sont : <span style="color:#e60012; text-shadow:#414548 1px 1px 1px"> #Nintendo #Indie #Metroidvania #JRPG #Aventure #VisualNovel</span>
+                Forte d'une expérience professionnelle en écriture journalistique (JeuxVideo.com, La Voix du Nord, Le
+                Canari), je me plaîs à écrire sur le sujet des jeux vidéo.
+                Mes thèmes favoris dans le domaine sont : <span style="color:#e60012;">
+                    #Nintendo #Indie #Metroidvania #JRPG #Aventure #VisualNovel</span>
+                Voici ci-dessous quelques articles sur des sujets d'actus JV rédigé pendant mon contrat chez JV, ainsi
+                que des articles longs, fruits de mon analyse personnelle.
             </p>
         </div>
-        </section>
-        <h2>Articles courts - Exemples de sujets "chauds"</h2>
-        <div class="carousel-container">
-            <div class="carousel-track" id="carouselTrack">
-                <!-- Articles -->
-            </div>
-            <div class="carousel-controls">
-                <button class="carousel-btn prev-btn">‹</button>
-                <button class="carousel-btn next-btn">›</button>
-            </div>
+    </section>
+    <h2>Articles courts - Exemples de sujets "chauds"</h2>
+    <div class="carousel-container">
+        <div class="carousel-track" id="carouselTrack">
+            <!-- Articles -->
         </div>
-        <script>
-// Charger les articles depuis articles.js (déjà chargé)
-// et initialiser le carrousel
+        <div class="carousel-controls">
+            <button class="carousel-btn prev-btn">‹</button>
+            <button class="carousel-btn next-btn">›</button>
+        </div>
+    </div>
+    <script>
+        // Charger les articles depuis articles.js (déjà chargé)
+        // et initialiser le carrousel
 
-document.addEventListener('DOMContentLoaded', function() {
-    const carouselTrack = document.getElementById('carouselTrack');
-    const prevBtn = document.querySelector('.prev-btn');
-    const nextBtn = document.querySelector('.next-btn');
-    
-    let currentPosition = 0;
-    const cardWidth = 320; // Largeur d'une carte + gap
-    
-    // Fonction pour créer les cartes d'articles
-    function createArticleCards() {
-        carouselTrack.innerHTML = '';
-        
-        articles.forEach(article => {
-            const card = document.createElement('div');
-            card.className = 'article-card';
-            
-            card.innerHTML = `
+        document.addEventListener('DOMContentLoaded', function () {
+            const carouselTrack = document.getElementById('carouselTrack');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+
+            let currentPosition = 0;
+            const cardWidth = carouselTrack.parentElement.offsetWidth;
+
+            // Fonction pour créer les cartes d'articles
+            function createArticleCards() {
+                carouselTrack.innerHTML = '';
+
+                articles.forEach(article => {
+                    const card = document.createElement('div');
+                    card.className = 'article-card';
+
+                    card.innerHTML = `
                 <div class="article-card-content">
                     <span class="article-subject">${article.subject}</span>
                     <h3 class="article-title">${article.title}</h3>
@@ -72,46 +76,43 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 </div>
             `;
-            
-            carouselTrack.appendChild(card);
+
+                    carouselTrack.appendChild(card);
+                });
+            }
+
+            // Navigation
+            function moveCarousel(direction) {
+                const containerWidth = carouselTrack.parentElement.offsetWidth;
+
+                if (direction === 'next') {
+                    currentPosition = Math.min(currentPosition + containerWidth, (articles.length - 1) * containerWidth);
+                } else {
+                    currentPosition = Math.max(currentPosition - containerWidth, 0);
+                }
+                carouselTrack.style.transform = `translateX(-${currentPosition}px)`;
+            }
+
+            // Événements
+            prevBtn.addEventListener('click', () => moveCarousel('prev'));
+            nextBtn.addEventListener('click', () => moveCarousel('next'));
+
+            // Initialisation
+            createArticleCards();
         });
-    }
-    
-    // Navigation
-    function moveCarousel(direction) {
-        const trackWidth = carouselTrack.scrollWidth;
-        const containerWidth = carouselTrack.parentElement.offsetWidth;
-        const maxPosition = trackWidth - containerWidth;
-        
-        if (direction === 'next') {
-            currentPosition = Math.min(currentPosition + cardWidth, maxPosition);
-        } else {
-            currentPosition = Math.max(currentPosition - cardWidth, 0);
-        }
-        
-        carouselTrack.style.transform = `translateX(-${currentPosition}px)`;
-    }
-    
-    // Événements
-    prevBtn.addEventListener('click', () => moveCarousel('prev'));
-    nextBtn.addEventListener('click', () => moveCarousel('next'));
-    
-    // Initialisation
-    createArticleCards();
-});
-</script>
-<script src="articles.js"></script>
-    </body>
+    </script>
+    <script src="articles.js"></script>
+</body>
 
 
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Portfolio global</a></li>
-                <li><a href="mailto:lola-louna@outlook.fr">Me contacter</a></li>
-            </ul>
-        </nav>
-    </footer>
+<footer>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Portfolio global</a></li>
+            <li><a href="mailto:lola-louna@outlook.fr">Me contacter</a></li>
+        </ul>
+    </nav>
+</footer>
 
 
 

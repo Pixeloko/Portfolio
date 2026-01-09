@@ -51,9 +51,9 @@ article {
 }
 
 #presentation {
-    filter: drop-shadow(10px 10px 4px #414548);
+    filter: drop-shadow(5px 5px 4px );
     width: 500px;
-    background-color: #989898;
+    background-color: #98989870;
     padding: 10px;
     border-radius: 30px;
 }
@@ -90,7 +90,6 @@ h2 {
 
 .carousel-track {
     display: flex;
-    justify-content: center;
     gap: 20px;
     transition: transform 0.5s ease;
     padding: 10px;
@@ -98,12 +97,13 @@ h2 {
 
 .article-card {
     flex: 0 0 auto;
-    width: 1000px;
+    width: 100%;
     background: white;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 1px 1px 1px ;
     border: 1px solid #e0e0e0;
+    margin: 0 auto; 
 }
 
 .article-card-content {
