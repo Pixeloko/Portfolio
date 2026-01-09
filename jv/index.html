@@ -35,16 +35,23 @@
     <h2>Articles courts - Exemples de sujets "chauds"</h2>
     <div class="carousel-container">
         <div class="carousel-track" id="carouselTrack">
-            <!-- Articles -->
         </div>
         <div class="carousel-controls">
             <button class="carousel-btn prev-btn">‹</button>
             <button class="carousel-btn next-btn">›</button>
         </div>
     </div>
+    <h2>Articles longs Propositions personnelles</h2>
+    <div class="carousel-container2">
+        <div class="carousel-track2" id="carouselTrack2">
+        </div>
+        <div class="carousel-controls2">
+            <button class="carousel-btn prev-btn2">‹</button>
+            <button class="carousel-btn next-btn2">›</button>
+        </div>
+    </div>
     <script>
-        // Charger les articles depuis articles.js (déjà chargé)
-        // et initialiser le carrousel
+
 
         document.addEventListener('DOMContentLoaded', function () {
             const carouselTrack = document.getElementById('carouselTrack');
@@ -99,6 +106,55 @@
 
             // Initialisation
             createArticleCards();
+
+            // CARROUSEL 2 (DUPLIQUÉ)
+            const carouselTrack2 = document.getElementById('carouselTrack2');
+            const prevBtn2 = document.querySelector('.prev-btn2');
+            const nextBtn2 = document.querySelector('.next-btn2');
+            let currentPosition2 = 0;
+            
+            function createArticleCards2() {
+                carouselTrack2.innerHTML = '';
+                articles2.forEach(article2 => {
+                    const card = document.createElement('div');
+                    card.className = 'article-card';
+                    card.innerHTML = `
+                <div class="article-card-content">
+                    <span class="article-subject">${article2.subject2}</span>
+                    <h3 class="article-title">${article2.title2}</h3>
+                    <p class="article-description">${article2.description2}</p>
+                    <p class="article-subtitle1">${article2.subtitle12}</p>
+                    <p class="article-text1">${article2.text12}</p>
+                    <p class="article-subtitle2">${article2.subtitle22}</p>
+                    <p class="article-text2">${article2.text22}</p>
+                    <p class="article-text2">${article2.subtitle3}</p>
+                    <p class="article-text2">${article2.text3}</p>
+                    <p class="article-text2">${article2.subtitle4}</p>
+                    <p class="article-text2">${article2.text4}</p>
+                    <p class="article-text2">${article2.subtitle5}</p>
+                    <p class="article-text2">${article2.text5}</p>
+                    <div class="article-length">
+                        <p>${article2.length2} mots</p>
+                    </div>
+                </div>
+            `;
+                    carouselTrack2.appendChild(card);
+                });
+            }
+            
+            function moveCarousel2(direction) {
+                const containerWidth = carouselTrack2.parentElement.offsetWidth;
+                if (direction === 'next') {
+                    currentPosition2 = Math.min(currentPosition2 + containerWidth, (articles.length - 1) * containerWidth);
+                } else {
+                    currentPosition2 = Math.max(currentPosition2 - containerWidth, 0);
+                }
+                carouselTrack2.style.transform = `translateX(-${currentPosition2}px)`;
+            }
+            
+            prevBtn2.addEventListener('click', () => moveCarousel2('prev'));
+            nextBtn2.addEventListener('click', () => moveCarousel2('next'));
+            createArticleCards2();
         });
     </script>
     <script src="articles.js"></script>

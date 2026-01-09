@@ -79,7 +79,7 @@ h2 {
 }
 
 /* Styles pour le carrousel */
-.carousel-container {
+.carousel-container, .carousel-container2 {
     position: relative;
     width: 100%;
     max-width: 1200px;
@@ -88,7 +88,7 @@ h2 {
     padding: 20px 0;
 }
 
-.carousel-track {
+.carousel-track, .carousel-track2 {
     display: flex;
     gap: 20px;
     transition: transform 0.5s ease;
@@ -120,8 +120,9 @@ h2 {
     margin-bottom: 10px;
 }
 
-.article-title {
-    font-size: 1.2em;
+.article-title, .article-title2 {
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
     margin: 10px 0;
     color: #333;
     line-height: 1.4;
@@ -148,14 +149,14 @@ h2 {
     font-style: italic;
 }
 
-.carousel-controls {
+.carousel-controls, .carousel-controls2 {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
 }
 
-.carousel-btn {
+.carousel-btn, .carousel-btn2 {
     background: #e60012;
     color: white;
     border: none;
@@ -167,6 +168,6 @@ h2 {
     transition: background 0.3s;
 }
 
-.carousel-btn:hover {
+.carousel-btn:hover, .carousel-btn2:hover {
     background: #b3000e;
 }
