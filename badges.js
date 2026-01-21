@@ -10,7 +10,7 @@ bouton.addEventListener('click', () => {
     img1.alt = "Image 1";
 
     const img2 = document.createElement('img');
-    img2.src = "medias/linux-unhatched.png";
+    img2.src = "medias/data-science-essentials-with-python.png";
     img2.alt = "Image 2";
 
     const img3 = document.createElement('img');
