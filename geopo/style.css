@@ -11,7 +11,7 @@ header, footer {
     padding-bottom: 20px;
 }
 
-ul {
+.list {
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -24,6 +24,12 @@ ul {
     }
 }
 
+#org_list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 a {
     color:black; ;
 }
@@ -31,13 +37,16 @@ a:hover {
     color: #44090e;
 }
 
-article {
-    border-radius: 30px;
-    padding: 50px;
-    border: #00c3e3 solid 10px;
-    p, div {
-        font-family: 'Times New Roman', Times, serif;
-    }
+button{
+    width: 440px;
+    border-radius: 10px;
+    color: snow;
+    background-color: black;
+    font-size: 20px;
+    text-align: left
+}
+#organizations{
+    background-color: #44090e;
 }
 
 #presentation {
@@ -51,7 +60,6 @@ article {
 
 section {
     margin: 50px;
-    text-align: center;
     display: flex;
     justify-content: center;
 }
@@ -65,8 +73,12 @@ p {
     src: url(TheanoDidotRegular-R3pA.ttf);
 }
 
-h2, h3 {
+#page_title{
     margin-left: 30px;
     text-align: center;
+    color: snow;
+}
+
+h3{
     color: snow;
 }
