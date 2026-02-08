@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Rédactrice Web JV</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Portfolio Redactrice d'articles analytiques en relations internationales et géopolitiques</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Portfolio global</a></li>
+                <li><a href="mailto:lola-louna@outlook.fr">Me contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div id="presentation">
+            <h3>Presentation</h3>
+            <p>
+                L'auteur de ces articles est diplômé d'une master en science politique à majeure internationale. En plus de ce parcours académique, plusieurs expériences professionnelle liées au domaine de la recherche ont été acquises (voir les organisations). 
+                Trois articles ont été réalisés au cours des six années d'études ainsi que plusieurs articles de divers types (note de synthèse, commentaire), dont en voici un échantillon ci-dessous.
+            </p>
+        </div>
+    </section>
+    <h2>Sélection d'articles</h2>
+    <nav>
+        <ul>
+            <li><a href="#"><button id="1">L’eau : source de richesse, pouvoir et de conflits</button></a></li>
+        </ul>
+    </nav>
+    <section id="reading">
+        <script type="module"> // For import/export 
+            import { articles } from './articles.js'
+            console.log(articles)
+            document.getElementById("reading").addEventListener("click", function () {
+            })
+        </script>
+    </section>
+    <script src="articles.js"></script>
+</body>
+
+
+<footer>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Portfolio global</a></li>
+            <li><a href="mailto:lola-louna@outlook.fr">Me contacter</a></li>
+        </ul>
+    </nav>
+</footer>
+
+
+
+</html>

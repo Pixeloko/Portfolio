@@ -1,0 +1,72 @@
+html {
+    background-color: rgb(29, 4, 4);
+    font-family: Theano;
+}
+
+header, footer {
+    background-color: #44090e;
+    color: rgb(232, 233, 213);
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    a, li {
+        color: rgb(205, 201, 201);
+        list-style: none;
+    }
+    a:hover {
+       color: white; 
+    }
+}
+
+a {
+    color:black; ;
+}
+a:hover {
+    color: #44090e;
+}
+
+article {
+    border-radius: 30px;
+    padding: 50px;
+    border: #00c3e3 solid 10px;
+    p, div {
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+#presentation {
+    filter: drop-shadow(5px 5px 4px );
+    width: 700px;
+    background-color: #98989870;
+    padding: 10px;
+    border-radius: 30px;
+    color: snow;
+}
+
+section {
+    margin: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@font-face {
+    font-family: Theano;
+    src: url(TheanoDidotRegular-R3pA.ttf);
+}
+
+h2, h3 {
+    margin-left: 30px;
+    text-align: center;
+    color: snow;
+}
