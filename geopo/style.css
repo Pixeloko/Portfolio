@@ -28,6 +28,9 @@ header, footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    list-style: none;
+    justify-content: center;
+    gap: 50px;
 }
 
 a {
@@ -43,10 +46,23 @@ button{
     color: snow;
     background-color: black;
     font-size: 20px;
-    text-align: left
 }
+
+#buttons{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
 #organizations{
     background-color: #44090e;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: snow;
+    justify-content: center;
 }
 
 #presentation {
@@ -56,9 +72,10 @@ button{
     padding: 10px;
     border-radius: 30px;
     color: snow;
+    text-align: center;
 }
 
-section {
+.container {
     margin: 50px;
     display: flex;
     justify-content: center;

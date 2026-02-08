@@ -19,9 +19,9 @@
         </nav>
     </header>
 
-    <section>
+    <section class="container">
         <div id="presentation">
-            <h3>Presentation</h3>
+            <h2>Presentation</h2>
             <p>
                 L'auteur de ces articles est diplômé d'un master en science politique à majeure internationale. En plus du parcours académique, plusieurs expériences professionnelles liées au domaine de la recherche ont été acquises (<a href="#org">voir les organisations</a>). 
                 Trois articles ont été réalisés au cours des six années d'études ainsi que plusieurs articles de divers types (note de synthèse, commentaire), dont en voici un échantillon ci-dessous.
@@ -30,7 +30,7 @@
     </section>
     <h2 id="page_title">Sélection d'articles</h2>
     <nav>
-        <ul class="list">
+        <ul id="buttons">
             <li><a href="#"><button id="2">Sociétés militaires privées : symptôme de l’externalisation de la guerre</button></a></li>
             <li><a href="#"><button id="1">L’eau : source de richesse, pouvoir et de conflits</button></a></li>
         </ul>
@@ -59,7 +59,7 @@
                 let foundArticle = articles.find(article => article.id == buttonId)
                 if (foundArticle){
                     pasting.innerHTML = `
-                        <div style="color: black;background-color:snow; border-radius: 20px;padding-bottom: 40px"><h3 style="font-size: 2em">${foundArticle.title}</h3>
+                        <div style="text-align:center;color:black;background-color:snow; border-radius: 20px;padding-bottom: 40px"><h2 style="font-size: 2em">${foundArticle.title}</h3>
                             <div style="justify-content:center"><p style="text-align:left; padding-left: 100px; padding-right: 100px">${foundArticle.text1}</p></div>
                             <p><strong>${foundArticle.subtitle1}</strong></p>
                             <div style="justify-content:center"><p style="text-align:left; padding-left: 100px; padding-right: 100px">${foundArticle.text2}</p></div>
@@ -79,9 +79,10 @@
             <h2 id="org">Contrats avec</h4>
         <nav>
             <ul id="org_list">
-                <li><img style="width:200px;" src="https://espol.school/wp-content/themes/Espol/assets/img/logo.svg"></li>
+                <li><img style="width:200px;background-color: snow;" src="https://espol.school/wp-content/themes/Espol/assets/img/logo.svg"></li>
                 <li><img style="width:200px;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fchaireunesco-prev.ca%2Fwp-content%2Fuploads%2F2019%2F07%2Flogo_chaire_unescoprev4.png&f=1&nofb=1&ipt=91e5cbfa50f8c50d4ffe037a3278f990783bfacc6282b7b7b077bd7681164e25"></li>
-                <li><img style="width:100px;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.wUVgLjzIY1uHfcUg6zxf6QHaHW%3Fpid%3DApi&f=1&ipt=ae4a80a8092d25f2dac41de68fe5f10fcc9859a903f3bc099226b14c401d6aad"></li>
+                <li><img style="width:200px;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmanoudaddy.fr%2Fwp-content%2Fuploads%2F2025%2F01%2F2025-01-21-19_30_30.jpg&f=1&nofb=1&ipt=33a43d1508094dde1c164ff8154ea8c71417868edeccdab0e16254eb53208793"></li>
+                <li><img style="width:200px;" src="https://www.cem.ulaval.ca/wp-content/themes/nubee/library/images/logo.png"></li>
             </ul>
         </nav>
     </section>
