@@ -206,8 +206,11 @@ i {
   }
 }
 
+#progress-reseaux {
+  --target-width: 35%;
+}
 #progress-python {
-  --target-width: 20%;
+  --target-width: 35%;
 }
 #progress-sql {
   --target-width: 30%;
