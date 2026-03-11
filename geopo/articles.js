@@ -21,37 +21,7 @@ const articles = [
     subtitle4:
     "ENVIRONNEMENT",
     text4:
-    "​Si les barrages apparaissent comme la solution de premier choix, elle est toutefois limités. Ces constructions s’avèreraient bien être une fausse bonne idée : une fois installées sur un cours de rivière, elles favorisent en effet l’évaporation. Par exemple, à Madagascar, Action Contre la Faim en a bien pris note et a donc mis en place un ingénieux système de barrage de sable. Le sable permet non seulement de filtrer naturellement l’eau mais aussi de réduire l’effet d’évaporation de 80 % par rapport à un barrage classique. En effet, l’eau est une denrée renouvelable dans une certaine mesure puisqu’environ la moitié de l’eau de pluie s’évapore. Depuis 2022 l’ONU prévient d'une crise imminente de l’eau tout en soulignant la gravité des périodes de sécheresse. Selon le World Resources Institute, la moitié de la population mondiale subit déjà un stress hydrique « élevé » au moins un mois par an ; et au Moyen-Orient ou en Afrique du Nord, 83 % de la population est exposée à un stress hydrique très important. ​Cette solution de trois barrages de sable à Madagascar s’avère peu coûteuse mais reste une réponse locale qui permet à un village de vivre de son agriculture, de cuisiner et de boire ; ceci alors que la population mondiale s’urbanise. ​S’ils répondent à des risques environnementaux, les barrages peuvent également en créer, notamment lorsqu’ils sont mal entretenus ou exposés à des catastrophes naturelles comme des séismes (risque d’éboulement, d’inondation, de tsunami).",
-    subtitle5:
-    "",
-    text5:
-    "",
-    subtitle6:
-    "",
-    text6:
-    "",
-    subtitle7:
-    "",
-    text7:
-    "",
-    subtitle8:
-    "",
-    text8:
-    "",
-    subtitle9:
-    "",
-    text9:
-    "",
-    subtitle10:
-    "",
-    text10:
-    "",
-    subtitle11:
-    "",
-    text11:
-    "",
-    sources:
-    ""
+    "​Si les barrages apparaissent comme la solution de premier choix, elle est toutefois limités. Ces constructions s’avèreraient bien être une fausse bonne idée : une fois installées sur un cours de rivière, elles favorisent en effet l’évaporation. Par exemple, à Madagascar, Action Contre la Faim en a bien pris note et a donc mis en place un ingénieux système de barrage de sable. Le sable permet non seulement de filtrer naturellement l’eau mais aussi de réduire l’effet d’évaporation de 80 % par rapport à un barrage classique. En effet, l’eau est une denrée renouvelable dans une certaine mesure puisqu’environ la moitié de l’eau de pluie s’évapore. Depuis 2022 l’ONU prévient d'une crise imminente de l’eau tout en soulignant la gravité des périodes de sécheresse. Selon le World Resources Institute, la moitié de la population mondiale subit déjà un stress hydrique « élevé » au moins un mois par an ; et au Moyen-Orient ou en Afrique du Nord, 83 % de la population est exposée à un stress hydrique très important. ​Cette solution de trois barrages de sable à Madagascar s’avère peu coûteuse mais reste une réponse locale qui permet à un village de vivre de son agriculture, de cuisiner et de boire ; ceci alors que la population mondiale s’urbanise. ​S’ils répondent à des risques environnementaux, les barrages peuvent également en créer, notamment lorsqu’ils sont mal entretenus ou exposés à des catastrophes naturelles comme des séismes (risque d’éboulement, d’inondation, de tsunami)."
   },
   {
     id: 2,
@@ -76,37 +46,8 @@ const articles = [
     "Externalisation économique",    
     text4:
     "​Le contrat que les SMP passent avec l’État est un contrat gagnant-gagnant assurant rémunération aux contractuels et une intervention discrète pour le gouvernement. Les SMP ne sont pas les seuls acteurs externes, symptôme de l’externalisation de la guerre. Il y a les entreprises de l’armement assez influents pour soutenir des projets et stratégies de défense nationale (comme l’ont fait les nombreuses nouvelles entreprises du drone en Ukraine), mais aussi pour remporter des appels d’offres émis par des États étrangers. Citons le français Thales et le belge Proximus qui, cet été 2025, remportent l’offre de modernisation de l'agence d'information et de communication de l’Otan. Ou encore MSubs, une entreprise britannique qui a développé le drone sous-marin surnommé Excalibur que la Royal Navy a testé à l’été 2025, depuis l’Australie. Ce marché de l’armement permet à toutes nations de se doter, si elles en ont les moyens, des équipements militaires performants. Parfois, dans un contrat de vente, l’État acheteur est en mesure de bénéficier du transfert de technologie du matériel, des ressources qui lui permet de construire sur son sol ses propres équipements. ​Le monde du renseignement est également investi par des acteurs privés qui opèrent pour les gouvernements. Palantir en est un exemple. L’entreprise nord-américaine fournit des services (outils d’analyse quantité massive de données, de détection de combattants sur images de drones par exemple) à des services de renseignement étrangers (dont la DGSI) et des services états-uniens. ​La guerre dans le monde post guerre froide est également celle se jouant entre des acteurs privés dotés de moyens financiers, de brevets et de technologies précieuses pour les États. C’est ainsi que, dans le but de protéger ses savoirs, les États-Unis de Trump restreignaient en 2020 l’arrivée d’étudiants chinois dans les universités du pays (suspension et révocation de visa). La justification de cette mesure tient dans la considération de la civil-military fusion strategy. Une façon de pensée à la chinoise, qui vise à envisager la recherche en termes de double-avancée, dans les domaines économique et militaire. L’affrontement des avancées en matières d’innovation s’observe actuellement dans le domaine de l’intelligence artificielle, une course au « meilleur »  qui rappelle la course à l’espace du temps où le monde se divisait en deux",
-    subtitle5:
-    "",
-    text5:
-    "",
-    subtitle6:
-    "",
-    text6:
-    "",
-    subtitle7:
-    "",
-    text7:
-    "",
-    subtitle8:
-    "",
-    text8:
-    "",
-    subtitle9:
-    "",
-    text9:
-    "",
-    subtitle10:
-    "",
-    text10:
-    "",
-    subtitle11:
-    "",
-    text11:
-    "",
     sources:
-    "À lire : https://www.portail-ie.fr/univers/enjeux-de-puissances-et-geoeconomie/2023/lexternalisation-des-fonctions-de-soutien-de-larmee-une-tendance-qui-questionne-sur-notre-independance-strategique-a-long-terme/"
-    
+    "À lire : https://www.portail-ie.fr/univers/enjeux-de-puissances-et-geoeconomie/2023/lexternalisation-des-fonctions-de-soutien-de-larmee-une-tendance-qui-questionne-sur-notre-independance-strategique-a-long-terme/" 
   },
   {
     id: 3,
@@ -157,6 +98,71 @@ const articles = [
     "La production de matériel pour la défense et la dissuasion aérienne doit s’accompagner d’une stratégie européenne pour le « left-of-launch », c’est-à-dire les mesures de prévention intervenant avant le lancement de missiles. Il est question d’accorder une importance toute particulière au rôle du renseignement (surveillance, reconnaissance) et d’assurer l’interopérabilité entre les agences du renseignement et les forces aériennes. Cet échange d’information a été un atout pour l’armée israélienne dans le déploiement de sa campagne offensive contre l’Iran. À l’inverse, le manque d’information affecte les efforts en termes de production industrielle : « Russia’s information problem persisted beyond the opening salvos. Targeting plans were created every 24 hours—much too slow to destroy Ukraine’s mobile systems following successful suppression ». L’Europe doit mettre en place une stratégie visant à moderniser et à renforcer ses moyens de collecte et d’analyse du renseignement aérien afin d’établir une véritable stratégie du « left-of-launch ».<br> Les défis auxquels fait face l’Europe sont nombreux. Outre la menace que constitue l’offensive russe en Ukraine, la dépendance que le continent entretient encore à l’égard des États-Unis représente une faiblesse. Les USA sont perçus comme les plus puissants en termes de capacités de défense et de dissuasion aérienne, comme l’a prouvé l’opération au Venezuela non détectée par les radars chinois installés dans le pays. D’autres acteurs pourraient à l’avenir prouver leur puissance dans le domaine, tels que la Corée du Sud, qui a exporté 48 FA-50 en Pologne, le Brésil, qui prévoit d’exporter des KC-390 Millennium vers cinq pays européens. Que ce soit pour ces acteurs étatiques émergents ou l’UE, les terres rares sont primordiales pour la production d’équipements militaires aériens et la dépendance à leur égard constitue un enjeu stratégique majeur. En Europe, l’EU Observatory of Critical Technologies pourrait jouer un rôle dans la définition des matériaux sujets à la dépendance.",
     sources:
     "<li>Béraud-Sudreau, L., & Giegerich, B. (2018). NATO Defence Spending and European Threat Perceptions. Survival, 60(4), 53–74. https://doi.org/10.1080/00396338.2018.1495429 </li><li> Calcara, A., Gilli, A., Gilli, M., Marchetti, R., & Zaccagnini, I. (2022). Why Drones Have Not Revolutionized War: The Enduring Hider-Finder Competition in Air Warfare. International Security, 46(4), 130–171. https://doi.org/10.1162/isec_a_00431 </li><li> Elysée. (2025, January 6). Conférence des ambassadrices et ambassadeurs 2025. <i>elysee.fr</i>. https://www.elysee.fr/emmanuel-macron/2025/01/06/conference-des-ambassadrices-et-ambassadeurs-2025 </li><li>Julia Tomasso. (28 February 2025). Issues of the Iranian Defence Industry and Strategic Choices: Resistance without an Axis? - IRIS. https://www.iris-france.org/en/issues-of-the-iranian-defence-industry-and-strategic-choices-resistance-without-an-axis/ </li><li>La France dans l’OTAN : de l’allié difficile au contributeur essentiel. (n.d.). Ifri. https://www.ifri.org/fr/etudes/la-france-dans-lotan-de-lallie-difficile-au-contributeur-essentiel </li><li>Palmer, A., & Ward, K. (2026). Air Superiority in the Twenty-First Century: Lessons from Iran and Ukraine. https://www.csis.org/analysis/air-superiority-twenty-first-century-lessons-iran-and-ukraine </li><li>Russian air patrols: long-range ambitions. (2015). <i>Strategic Comments</i>, 21(4), iv–v. https://doi.org/10.1080/13567888.2015.1067464 </li><li>The International Institute for Strategic Studies (IISS),  (Ed.). (2025). Progress and Shortfalls in Europe’s Defence: An Assessment (1st ed.). Routledge. https://doi.org/10.4324/9781003715054 </li><li>White paper for European defence - <i>Readiness 2030</i>. (n.d.). Defence Industry and Space. https://defence-industry-space.ec.europa.eu/eu-defence-industry/white-paper-european-defence-readiness-2030_en</li>"    
+  },
+  {
+    id: 4,
+    date: "11-03-2026",
+    title: "Composantes aériennes (RU-UKR)",
+    text: "Analyse et rapports des forces aériennes (perte de drones, inventaires) des deux États engagés dans la guerre menée par la Russie.",
+    subtitle1: "Pertes de drones russes (2022-2025)",
+    text1:"<div style='text-align:center'><img src='./media/russian_losses.png'></div>",
+    subtitle2:"Inventaire de la composante militaire aérienne russe (2026)", 
+    text2:"<div style='text-align:center'><img src='./media/RU_inventory.png'></div>",
+    subtitle3:'Rapport d\'analyse',
+    text3:`===================Analytic report on air force (RUSSIA)===================<br>
+      Type : Bomber<br>
+      Average age : 58 years old<br>
+      Most frequent model : Tu-22M<br><br>
+
+      Type : Combat<br>
+      Average age : 37 years old<br>
+      Most frequent model : Su-27/30/35<br><br>
+
+      Type : Helicopter<br>
+      Average age : 42 years old<br>
+      Most frequent model : Mi-8/17/171<br><br>
+
+      Type : Special<br>
+      Average age : 47 years old<br>
+      Most frequent model : Il-38<br><br>
+
+      Type : Training<br>
+      Average age : 39 years old<br>
+      Most frequent model : L-39<br><br>
+
+      Type : Transport<br>
+      Average age : 47 years old<br>
+      Most frequent model : Il-76"<br><br>
+      `,
+      subtitle4:"Quantité d'unités actives en fonction de leur ancienneté (RU)", 
+      text4:"<div style='text-align:center'><img src='./media/ageactivity.png'></div>",
+      subtitle5:"Inventaire de la composante militaire aérienne ukrainienne (2026)", 
+      text5:"<div style='text-align:center'><img src='./media/UKR_inventory.png'></div>",
+      subtitle6:'Rapport d\'analyse',
+      text6:`===================Analytic report on air force (UKR)===================<br>
+        Type : Combat<br>
+        Average age : 42 years old<br>
+        Most frequent model : MiG-29<br><br>
+
+        Type : Helicopter<br>
+        Average age : 53 years old<br>
+        Most frequent model : Mi-8<br><br>
+
+        Type : Special<br>
+        Average age : 29 years old<br>
+        Most frequent model : Saab 340<br><br>
+
+        Type : Training<br>
+        Average age : 54 years old<br>
+        Most frequent model : L-39<br><br>
+
+        Type : Transport<br>
+        Average age : 60 years old<br>
+        Most frequent model : An-24/26<br><br>
+      `,
+      subtitle7:"Comparison aircrafts categories units",
+      text7:"<div style='text-align:center'><img src='./media/comparison.png'></div>",
+      sources:"Find the code <a target='_blank' href='https://github.com/Pixeloko/Data-Analysis/blob/main/case-analysis/data.ipynb'>here</a>"
   }
 
 ];
