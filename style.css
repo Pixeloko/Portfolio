@@ -43,12 +43,14 @@ html {
 }
 
 .commandes {
-  padding-bottom: 0;
   display: block;
   position: fixed;
   a {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  button {
+    font-size: 10px;
   }
 }
 
