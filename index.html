@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>PORTFOLIO</h1>
+    
+    <div class="btn-group">
+      <button class="btn" onclick="window.open('geopo/index.html','_blank')">Geopolitic analysis</button>
+      <button class="btn" onclick="window.open('jv/index.html','_blank')">Gaming redaction</button>
+      <button class="btn" onclick="window.open('cv/cv.html','_blank')">Curriculum Vitae</button>
+      <button class="btn" onclick="window.open('https://raphixg.github.io/Sehep/characters.html','_blank')">Artist website example</button>
+      <button class="btn" onclick="window.open('steinsgate/index2.html','_blank')">Steins;Gate Timeline</button>
+    </div>
+
+    <div class="toggle-group">
+      <div class="toggle-item">
+        <div class="toggle-header" onclick="toggleSection(this)">
+          <span class="toggle-title">Political Science background</span>
+          <span class="toggle-arrow">▶</span>
+        </div>
+        <div class="toggle-content">
+          <li>- <span style="color:brown">Master's degree</span> (international relations and political science)</li>
+          <li>- <span style="color:brown">Political violence</span> (automation project and research papers)</li>
+          <li>- <span style="color:brown">Indo-Pacific</span> focus</li>
+          <li>- Quantitative analysis (survey on media) & qualitative (sentiment analysis)</li>
+          <li>- Investigations (OSINT & media monitoring)</li>
+        </div>
+      </div>
+      <div class="toggle-item">
+        <div class="toggle-header" onclick="toggleSection(this)">
+          <span class="toggle-title">Computer science background</span>
+          <span class="toggle-arrow">▶</span>
+        </div>
+        <div class="toggle-content">
+          <li>- IT Bachelor & self-taught (since 2020)</li>
+          <li>- <span style="color:brown">Investigation</span> (OSINT, python, Maltego, personal tools sheet, René Molenaar trainings)</li>
+          <li>- <span style="color:brown">Networking</span> (GNS3, CISCO, BURP, personal sheet and projects)</li>
+          <li>- <span style="color:brown">Pentesting</span> (bash scripting, kali/linux env)</li>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleSection(header) {
+      const content = header.nextElementSibling;
+      const arrow = header.querySelector('.toggle-arrow');
+      content.classList.toggle('open');
+      arrow.textContent = content.classList.contains('open') ? '▼' : '▶';
+    }
+  </script>
+</body>
+</html>
